@@ -13,6 +13,7 @@ function App() {
   const { setUser, setIsAuthenticated, setLoading } = useContext(Context);
 
   useEffect(() => {
+    
     setLoading(true);
     axios
       .get(`${server}/users/me`, {
