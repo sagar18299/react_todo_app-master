@@ -16,7 +16,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${server}/users/new`,
+        `/users/new`,
         {
           name,
           email,

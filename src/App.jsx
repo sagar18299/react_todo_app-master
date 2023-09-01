@@ -16,7 +16,7 @@ function App() {
     
     setLoading(true);
     axios
-      .get(`${server}/users/me`, {
+      .get(`/users/me`, {
         withCredentials: true,
       })
       .then((res) => {

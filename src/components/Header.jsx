@@ -11,7 +11,7 @@ const Header = () => {
   const logoutHandler = async () => {
     setLoading(true);
     try {
-      await axios.get(`${server}/users/logout`, {
+      await axios.get(`/users/logout`, {
         withCredentials: true,
       });
 
